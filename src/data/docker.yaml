@@ -41,6 +41,8 @@ syntax:
     file_extensions:
       - docker-compose.yml
       - docker-compose.yaml
+      - docker-compose.ci.yml
+      - docker-compose.dev.yml
     contexts:
       main:
         - include: scope:source.yaml

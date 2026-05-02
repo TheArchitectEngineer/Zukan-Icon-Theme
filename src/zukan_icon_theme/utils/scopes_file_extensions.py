@@ -28,6 +28,7 @@ SCOPES_FILE_EXTENSIONS = [
     },  # fortran.yaml
     {'scope': 'source.glsl', 'file_extensions': ['fs']},  # fsharp.yaml
     {'scope': 'source.ini.python', 'file_extensions': ['setup.cfg']},
+    {'scope': 'source.ini.redis', 'file_extensions': ['nodes-6379.conf', 'users.acl']},  # valkey.yaml
     {'scope': 'source.js', 'file_extensions': ['js']},  # applescript.ymal
     {
         'scope': 'source.pubspec',

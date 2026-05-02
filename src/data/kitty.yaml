@@ -1,0 +1,19 @@
+%YAML 1.2
+---
+name: Kitty
+preferences:
+  scope: source.ini.kitty
+  settings:
+    icon: kitty
+syntax:
+  - name: INI (Kitty)
+    scope: source.ini.kitty
+    hidden: true
+    file_extensions:
+      - kitty.conf
+      - kitty-session
+      - kitty_session
+    contexts:
+      main:
+        - include: scope:source.ini
+          apply_prototype: true

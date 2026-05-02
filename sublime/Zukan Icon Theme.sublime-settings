@@ -160,6 +160,7 @@
     //    { "scope": "source.ini", "file_extensions": ["setup.cfg"] },
     //    { "scope": "source.ini.setuptools", "file_extensions": ["setup.cfg"] },
     //    { "scope": "source.ini.tox", "file_extensions": ["setup.cfg"] },
+    //    { "scope": "source.ini.valkey", "file_extensions": ["nodes-6379.conf", "users.acl"] },
     //    { "scope": "source.iot", "file_extensions": ["ino", "pde"] },
     //    { "scope": "source.js.jxa", "file_extensions": ["js"] },
     //    { "scope": "source.json", "file_extensions": ["config.json"] },
@@ -319,11 +320,18 @@
     // Default is 180 days.
     "cache_theme_info_lifespan": 180,
 
-    // If enabled, the output directory is cleaned before
+    // If true, the output directory is cleaned before
     // generating files.
     //
-    // Default is false.
-    "clean_output_dir": false,
+    // Set to false to speed up builds.
+    //
+    // WARNING: If false, New syntax package installations
+    // will no longer trigger automatic deletion of icon 
+    // syntaxes. You may need to use command Zukan Icon
+    // Theme: Delete Syntax -> All.
+    //
+    // Default is true.
+    "clean_output_dir": true,
 
     // This setting control if user want to auto upgrade
     // icons preferences and syntaxes files.

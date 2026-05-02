@@ -156,6 +156,7 @@ Required parameters are: scope and file extensions.
         { "scope": "source.ini", "file_extensions": ["setup.cfg"] },
         { "scope": "source.ini.setuptools", "file_extensions": ["setup.cfg"] },
         { "scope": "source.ini.tox", "file_extensions": ["setup.cfg"] },
+        { "scope": "source.ini.valkey", "file_extensions": ["nodes-6379.conf", "users.acl"] },
         { "scope": "source.iot", "file_extensions": ["ino", "pde"] },
         { "scope": "source.js.jxa", "file_extensions": ["js"] },
         { "scope": "source.json", "file_extensions": ["config.json"] },

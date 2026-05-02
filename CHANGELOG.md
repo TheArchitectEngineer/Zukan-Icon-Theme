@@ -3,10 +3,10 @@
 ## [0.4.11] - 2026
 
 ### Icons, syntaxes and preferences 👽
-- Add icon-theme: Coveralls, GoReleaser, NATS
+- Add icon-theme: Coveralls, GoReleaser, Kitty, NATS, OpenTelemetry
 - Add syntax: Docker, Yugabyte
 - Change icon: Oxc, Rolldown, Vite, Vitest
-- Change syntax: Code of Conduct, Docker, PostgreSQL, Redis, Valkey, Yugabyte
+- Change syntax: Code of Conduct, Docker, Gradle, PostgreSQL, Redis, TypeScript, Valkey, Yugabyte
 
 ### Plugin 🕹️
 - Add `clean_output_dir` setting, default is False for deleting zukan directories before generating files

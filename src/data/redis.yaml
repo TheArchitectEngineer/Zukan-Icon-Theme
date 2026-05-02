@@ -18,6 +18,7 @@ syntax:
     scope: source.ini.redis
     hidden: true
     file_extensions:
+      - nodes-6379.conf
       - redis.conf
       - users.acl
     contexts:

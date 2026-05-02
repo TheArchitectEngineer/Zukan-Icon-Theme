@@ -2,10 +2,28 @@
 ---
 name: Gradle
 preferences:
-  scope: source.groovy.gradle, source.Kotlin.gradle
+  scope: source.shell.bash.gradle, source.dosbatch.gradle, source.groovy.gradle, source.Kotlin.gradle
   settings:
     icon: gradle
 syntax:
+  - name: Batch File (Gradle)
+    scope: source.dosbatch.gradle
+    hidden: true
+    file_extensions:
+    - gradlew.bat
+    contexts:
+      main:
+        - include: scope:source.dosbatch
+          apply_prototype: true
+  - name: Bash (Gradle)
+    scope: source.shell.bash.gradle
+    hidden: true
+    file_extensions:
+    - gradlew
+    contexts:
+      main:
+        - include: scope:source.shell.bash
+          apply_prototype: true
   - name: Groovy (Gradle)
     scope: source.groovy.gradle
     hidden: true

@@ -1,0 +1,24 @@
+%YAML 1.2
+---
+name: OpenTelemetry
+preferences:
+  scope: binary.opentelemetry, source.yaml.opentelemetry
+  settings:
+    icon: opentelemetry
+syntax:
+  - name: Binary (OpenTelemetry)
+    scope: binary.opentelemetry
+    hidden: true
+    file_extensions:
+      - otelcol-contrib
+    contexts:
+      main: []
+  - name: YAML (OpenTelemetry)
+    scope: source.yaml.opentelemetry
+    hidden: true
+    file_extensions:
+      - otel-collector-config.yaml
+    contexts:
+      main:
+        - include: scope:source.yaml
+          apply_prototype: true
